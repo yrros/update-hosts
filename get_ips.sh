@@ -16,7 +16,7 @@
 # alias awsin='ssh -o StrictHostKeyChecking=no -i /Users/PATH/KEY.pem ec2-user@$(aws ec2 describe-instances --instance-id $INSTANCE --query "Reservations[0].Instances[0].PublicIpAddress" --output text)'
 
 # to set your default px-deploy name set an environment variable named px-dep-default in your environment, on a Mac this is stored in ~/.zshrc, add "export px-dep-default=ant-mig"  where 'ant-mig' is your deployment default name.
-# export PX-DEP-DEFAULT=ant-mig
+# export PX_DEP_DEFAULT=ant-mig
 
 # the address of the jumpbox in AWS
 # export INSTANCE="i-0c...."
